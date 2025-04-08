@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qustom Consulting | Sustainable Engineering Solutions</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img src="logo.png" alt="Qustom Consulting Logo" class="logo-img">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <img src="logo.png" alt="Qustom Consulting Logo" class="hero-logo">
+            <h1>Qustom Consulting</h1>
+            <p>Empowering customised solutions for a sustainable future.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>Qustom Consulting is a specialized project management and engineering consultancy committed to excellence and sustainability. Our expertise spans across project management, process engineering, design development, and digital transformation.</p>
+                    <p>Leveraging our deep industry knowledge and experience, we craft customised solutions that empower our clients to thrive in today's competitive and rapidly evolving landscape.</p>
+                    <p>We believe in delivering solutions that not only meet business objectives but also align with global sustainability goals. From energy-efficient designs to sustainable process improvements, our team is committed to helping clients reduce their environmental footprint and achieve long-term success.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Qustom Consulting Team">
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Qustom Consulting?</h2>
+                <p>We differentiate ourselves through our commitment to excellence, innovation, and sustainable solutions.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Client-Centric Approach</h3>
+                    <p>We take the time to understand your specific needs and tailor our solutions accordingly.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Technical Excellence</h3>
+                    <p>Our team of experts brings deep industry knowledge and proven methodologies to every project.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovative Solutions</h3>
+                    <p>We leverage the latest tools and technologies to provide cutting-edge solutions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainability Focus</h3>
+                    <p>We are dedicated to supporting initiatives that contribute to a more sustainable future.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We provide comprehensive consulting services designed to address your unique challenges and drive meaningful progress.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Customised Project Management</h3>
+                    <p>Strategic planning and execution, end-to-end project lifecycle management, stakeholder engagement, and risk mitigation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Process Engineering</h3>
+                    <p>Process optimization and design, sustainability-driven innovations, energy efficiency solutions, and technical due diligence.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Design Development</h3>
+                    <p>Conceptual and detailed engineering design, feasibility assessments, regulatory compliance, and value engineering.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Digital Transformation</h3>
+                    <p>Smart technologies integration, data-driven decision-making, digital twin solutions, and automation advancements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <div class="section-title">
+                <h2>Case Studies</h2>
+                <p>Explore our successful projects and the impactful results we've delivered for our clients.</p>
+            </div>
+            
+            <div class="case-study-tabs">
+                <button class="tab-btn active" onclick="openCaseStudy('food-tech')">Food Tech</button>
+                <button class="tab-btn" onclick="openCaseStudy('nutritional')">Nutritional</button>
+                <button class="tab-btn" onclick="openCaseStudy('protein')">Protein Startup</button>
+                <button class="tab-btn" onclick="openCaseStudy('flavors')">Flavors</button>
+                <button class="tab-btn" onclick="openCaseStudy('energy')">Energy</button>
+                <button class="tab-btn" onclick="openCaseStudy('cocoa')">Cocoa</button>
+            </div>
+            
+            <div id="food-tech" class="case-study-content active">
+                <div class="case-study-card">
+                    <h3>Food Technology Innovation Centre (FTIC) Pilot Scale CDMO Facility</h3>
+                    
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>The Food Technology Innovation Centre (FTIC) sought to establish a pilot-scale Contract Development and Manufacturing Organization (CDMO) facility to cater to the burgeoning demand for innovative food technologies. This ambitious project required a comprehensive strategy encompassing design, construction, and commissioning, incorporating cutting-edge upstream fermentation and downstream processing technologies.</p>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>Solution</h4>
+                        <p>We spearheaded the strategic proposal, meticulously outlining the project scope, objectives, and deliverables. Our team expertly managed the intricate design phase, ensuring the facility seamlessly integrated advanced fermentation and processing technologies. We oversaw the construction process, adhering to stringent quality and safety standards.</p>
+                    </div>
+                    
+                    <div class="results">
+                        <h4>Results</h4>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h5>Capacity Increase</h5>
+                            <p>40%</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>New Clients Attracted</h5>
+                            <p>15+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nutritional" class="case-study-content">
+                <div class="case-study-card">
+                    <h3>Major Nutritional & Aquaculture Facility Transformation</h3>
+                    
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>A major nutritional and aquaculture production facility sought to undergo a significant transformation to optimize its operations and enhance its production capabilities. This complex undertaking necessitated a comprehensive technical scope definition, meticulous cost estimation, and effective stakeholder management.</p>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>Solution</h4>
+                        <p>We meticulously developed and coordinated the technical scope for the facility transformation, encompassing all aspects of the project. Our team refined the cost estimates, identifying potential savings. We facilitated stakeholder engagement, ensuring alignment and securing their approval for the project.</p>
+                    </div>
+                    
+                    <div class="results">
+                        <h4>Results</h4>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h5>Cost Reduction</h5>
+                            <p>20%</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>Budget Secured</h5>
+                            <p>$5M</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="protein" class="case-study-content">
+                <div class="case-study-card">
+                    <h3>Insect Protein-Based Startup Master Planning</h3>
+                    
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>An insect protein-based startup sought comprehensive guidance and support in establishing its operations, from concept to commercialization. This entailed developing a robust master plan encompassing investment strategies, operational setups, and production optimization.</p>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>Solution</h4>
+                        <p>We established a close working relationship with the startup, providing end-to-end advisory services throughout its development journey. Our team guided the startup in securing strategic investments, optimizing its operational framework, and streamlining its production processes.</p>
+                    </div>
+                    
+                    <div class="results">
+                        <h4>Results</h4>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h5>Production Increase</h5>
+                            <p>30%</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>Time-to-Market Reduction</h5>
+                            <p>25%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="flavors" class="case-study-content">
+                <div class="case-study-card">
+                    <h3>Flavors and Fragrances Industry Leader: Feasibility Study and FEED</h3>
+                    
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>A leading Flavors and Fragrances company sought to enhance its production capabilities and improve operational efficiency. This required a comprehensive feasibility study to evaluate potential solutions and a Front-End Engineering Design (FEED) to define the technical specifications.</p>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>Solution</h4>
+                        <p>We directed a cross-functional team of experts in conducting a thorough feasibility study, evaluating various options for production enhancements. Our analysis identified opportunities for automation and process optimization.</p>
+                    </div>
+                    
+                    <div class="results">
+                        <h4>Results</h4>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h5>Output Increase</h5>
+                            <p>20%</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>Automation Efficiency</h5>
+                            <p>+15%</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>Waste Reduction</h5>
+                            <p>10%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="energy" class="case-study-content">
+                <div class="case-study-card">
+                    <h3>Energy Efficiency Opportunities Assessment</h3>
+                    
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>A major plant-based protein facility sought to optimize its energy consumption and ensure compliance with regulatory requirements for large-scale greenfield projects. This necessitated a comprehensive Energy Efficiency Opportunities Assessment (EEOA).</p>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>Solution</h4>
+                        <p>We conducted a detailed EEOA for the plant-based protein facility, meticulously analyzing its energy consumption patterns and identifying opportunities for improvement. Our assessment considered various factors, including process optimization, equipment upgrades, and renewable energy integration.</p>
+                    </div>
+                    
+                    <div class="results">
+                        <h4>Results</h4>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h5>Energy Savings</h5>
+                            <p>3-5%</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>Cost Savings</h5>
+                            <p>Significant</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>Energy Standards</h5>
+                            <p>Achieved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="cocoa" class="case-study-content">
+                <div class="case-study-card">
+                    <h3>Major Cocoa Manufacturing Plant: Processing Line Concept Study</h3>
+                    
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>A major cocoa manufacturing plant required a rapid concept level study for a new cocoa processing line to evaluate various design options and accelerate project timelines. This demanded a highly efficient and focused approach to deliver the study within a tight timeframe.</p>
+                    </div>
+                    
+                    <div class="solution">
+                        <h4>Solution</h4>
+                        <p>We accelerated the concept level study, systematically evaluating five distinct design options for the new cocoa processing line. Our team employed a streamlined approach, leveraging our expertise in cocoa processing and facility design to expedite the evaluation process.</p>
+                    </div>
+                    
+                    <div class="results">
+                        <h4>Results</h4>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h5>Project Efficiency</h5>
+                            <p>+25%</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>Time Saved</h5>
+                            <p>2 Weeks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Contact us today to learn how Qustom Consulting can help turn your challenges into opportunities for success!</p>
+            
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/{hello}" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Qustom Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
