@@ -67,3 +67,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// JS to show text on click
+const messages = [
+    "Understanding your business goals and challenges.",
+    "Conducting a thorough analysis of your current technical environments.",
+    "Developing actionable recommendations aligned with your objectives.",
+    "Assisting in executing the proposed solutions for maximum impact."
+  ];
+  
+  function showText(index) {
+    const textDiv = document.getElementById("timelineText");
+    textDiv.style.opacity = 0;
+    setTimeout(() => {
+      textDiv.textContent = messages[index];
+      textDiv.style.opacity = 1;
+    }, 200);
+  }
+  

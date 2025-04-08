@@ -407,7 +407,75 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+/* Timeline Styles */
+.timeline-container {
+    font-family: Helvetica, sans-serif;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 25px; /* centers the line on the circles */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary);
+    z-index: 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    flex: 1 1 25%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .timeline-item .circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    margin: 0 auto 8px auto;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--secondary);
+    transition: transform 0.2s ease;
+  }
+  
+  .timeline-item:hover .circle {
+    transform: scale(1.1);
+  }
+  
+  .timeline-item p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .timeline-text {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 30px;
+    transition: opacity 0.3s ease;
+  }
+
+@media (max-width: 600px) {
     .nav-links {
         display: none;
     }
@@ -427,4 +495,51 @@ footer {
     .about-image {
         order: -1;
     }
+
+    .timeline-container {
+        padding: 20px 10px;
+      }
+      
+    .timeline {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+        justify-content: flex-start; /* Align items to the left */
+        margin: 0; /* Remove auto margin to stick to left */
+        max-width: 100%; /* Take full width */
+    }
+
+      .timeline::before {
+        visibility: hidden;
+      }
+      
+      .timeline-item {
+        flex: 0 0 auto;
+        text-align: left;
+        padding: 15px 15px 15px 30px;
+        min-width: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      
+      .timeline-item .circle {
+        margin: 0 15px 0 -45px;
+        position: relative;
+        flex-shrink: 0;
+        transform: translateX(-10px);
+      }
+      
+      .timeline-item p {
+        font-size: 1rem;
+        text-align: left;
+      }
+      
+      .timeline-text {
+        margin-top: 20px;
+        font-size: 1rem;
+        padding: 0 10px;
+      }
 }
+
+  
